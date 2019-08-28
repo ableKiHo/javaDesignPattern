@@ -1,61 +1,17 @@
 package CH1.OOP;
 
-public class RoundRectangleShape {
-
-    //클래스 멤버변수
-    private static int shapeIdCounter = 0;
-
-    private int x;
-    private int y;
-
-    private int width;
-    private int height;
+public class RoundRectangleShape extends RectangleShape {
 
     private float arcWidth;
     private float arcHeight;
 
-    //클래스 메서드
-    public static int getShapeIdCounter() {
-        return shapeIdCounter++;
-    }
-
     public RoundRectangleShape() {
+        super();
     }
 
+    @Override
     public void draw() {
         System.out.println("draw RoundRectangle");
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public float getArcWidth() {
