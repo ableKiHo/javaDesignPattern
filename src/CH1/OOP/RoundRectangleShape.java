@@ -1,15 +1,10 @@
 package CH1.OOP;
 
-public class RoundRectangleShape extends RectangleShape {
+public class RoundRectangleShape extends AbstractBoundingShape {
 
     private float arcWidth;
     private float arcHeight;
 
-    public RoundRectangleShape() {
-        super();
-    }
-
-    @Override
     public void draw() {
         System.out.println("draw RoundRectangle");
     }
