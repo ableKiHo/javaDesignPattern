@@ -1,54 +1,11 @@
 package CH1.OOP;
 
-public class RoundRectangleShape implements IDrawable {
-
-    private int x;
-    private int y;
-
-    private int width;
-    private int height;
+public class RoundRectangleShape extends AbstractBoundingShape implements IShape {
 
     private float arcWidth;
     private float arcHeight;
 
     public RoundRectangleShape() {
-    }
-
-    @Override
-    public void draw() {
-        System.out.println("draw RoundRectangle");
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public float getArcWidth() {
@@ -65,5 +22,15 @@ public class RoundRectangleShape implements IDrawable {
 
     public void setArcHeight(float arcHeight) {
         this.arcHeight = arcHeight;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("draw RoundRectangle");
+    }
+
+    @Override
+    public boolean contains(int x, int y) {
+        return false;
     }
 }
