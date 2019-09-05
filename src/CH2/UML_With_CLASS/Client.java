@@ -2,17 +2,12 @@ package CH2.UML_With_CLASS;
 
 public class Client {
     public static void main(String[] args) {
-        Coffee coffee = new Coffee();
+        Barista barista = new Barista();
 
-        System.out.println(coffee.getName());
+        EspressoMachine espressoMachine = new EspressoMachine();
 
-        coffee.display();
-
-        Coffee espresso = new Espresso();
-        espresso.setName("Espresso");
-
-        System.out.println(espresso.getName());
-
+        barista.setEspressoMachine(espressoMachine);
+        Espresso espresso = barista.makeEspresso();
         espresso.display();
     }
 }
