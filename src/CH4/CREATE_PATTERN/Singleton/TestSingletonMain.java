@@ -15,7 +15,7 @@ public class TestSingletonMain {
 
         //TODO 싱글턴 패턴의 문제점은 멀티스레딩 환경에서의 동기화!
 
-        //TODO 유명한 사용 예는 스프링!
+        //TODO 대표적인 사용 예는 스프링!
 
         //TODO 싱글턴 객체가 상태값을 가지고 있다면?
 
